@@ -26,4 +26,5 @@ Your presentation must satisfy the following
 
 
 ### Networking Contacts
-www.nickshopov.com
+* Author: Nick Shopov
+* Contacts: www.nickshopov.com
