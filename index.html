@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Test deck</title>
+  <title>BMI Calculator</title>
   <meta charset="utf-8">
-  <meta name="description" content="Test deck">
-  <meta name="author" content="">
+  <meta name="description" content="BMI Calculator">
+  <meta name="author" content="Nick Shopov">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -31,10 +31,13 @@
     
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="assets/img/nickshopov.jpg">
+  </aside>
   <hgroup class="auto-fadein">
-    <h1>Test deck</h1>
-    <h2></h2>
-    <p><br/></p>
+    <h1>BMI Calculator</h1>
+    <h2>Check Your Body Mass Index &amp; Set Your Health Goal Now</h2>
+    <p>Nick Shopov<br/>BI Software Developer | www.nickshopov.com</p>
   </hgroup>
   <article></article>  
 </slide>
@@ -43,14 +46,10 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Read-And-Delete</h2>
+    <h2>The Issue</h2>
   </hgroup>
   <article data-timings="">
-    <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
-</ol>
+    <p><center><img src="assets/img/obesitygraph.jpg"></img></center></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -58,13 +57,63 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>The Measure</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">plot(1:10, 1:10)
+    <ul>
+<li>BMI stands for &quot;Body Mass Index&quot;</li>
+<li>BMI is a common measure to calculate your obesity level based on your height and weight</li>
+<li>The BMI score is therefore an important index for your health</li>
+</ul>
+
+<p><center><img src="assets/img/bmicats.jpg"></img></center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>The BMICalc App</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Fortunately, the <a href="https://nsbi.shinyapps.io/Shiny_BMICalc/" target="_blank">BMI Calculator App</a> is there to help you get started!
+<ol>
+<li> Calculate your BMI and see your Health Status quickly and easily;</li>
+<li> Nail down your Height and use the interactive slider to see your healthy Weight margins.</li>
+</ol></li>
+</ul>
+
+<p><center><img src="assets/img/bmiapp.png"></img></center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Your Turn</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Let&#39;s assume you are 181cm tall and you want to be healthy</li>
+<li>Your &quot;Golden Mean&quot; would be:</li>
+</ul>
+
+<pre><code class="r">iMinWeight &lt;- 18.5 * ((181/100)^2)
+iMaxWeight &lt;- 25 * ((181/100)^2)
+iAvg&lt;-mean(c(iMinWeight,iMaxWeight))
+return (iAvg)
 </code></pre>
 
-<p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+<pre><code>## [1] 71.26
+</code></pre>
+
+<ul>
+<li>Go to the <a href="https://nsbi.shinyapps.io/Shiny_BMICalc/" target="_blank">BMI Calculator App</a> to test see your bottom and upper margins </li>
+<li>Be healthy! Stay healthy! Be happy!</li>
+</ul>
 
   </article>
   <!-- Presenter Notes -->
@@ -76,14 +125,26 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title='The Issue'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='The Measure'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='The BMICalc App'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Your Turn'>
+         4
       </a>
     </li>
   </ul>
