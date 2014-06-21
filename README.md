@@ -1,4 +1,4 @@
-testDeck
+BMI Calculator | Slidify Deck
 ========
 
 This is a test deck for publishing a slidify document.
